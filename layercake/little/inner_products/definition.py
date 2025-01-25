@@ -17,7 +17,7 @@ class InnerProductDefinition(ABC):
 
     Parameters
     ----------
-    variables: list(~sympy.core.symbol.Symbol)
+    variables: list(~variable.Coordinate)
         List of variables used as coordinates.
     optimizer: None or callable, optional
         A function to optimize the computation of the integrals or the integrand.
@@ -25,7 +25,7 @@ class InnerProductDefinition(ABC):
 
     Attributes
     ----------
-    variables: list(~sympy.core.symbol.Symbol)
+    variables: list(~variable.Coordinate)
         List of variables used as coordinates.
     optimizer: None or callable
         A function to optimize the computation of the integrals or the integrand.
