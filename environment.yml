@@ -1,0 +1,23 @@
+name: layercake
+channels:
+  - conda-forge
+  - numba
+dependencies:
+  - python
+  - ipython
+  - jupyter
+  - matplotlib
+  - numba
+  - numpy
+  - scipy
+  - sympy
+  - sphinx
+  - sphinx_rtd_theme
+  - pytest
+  - sparse
+  - ffmpeg
+  - pebble
+  - pip
+  - pip:
+      - sphinxcontrib-bibtex
+
