@@ -34,24 +34,3 @@ class Coordinate(Variable):
         self.extent = extent
 
 
-class CoordinateSystem(object):
-
-    def __init__(self, coordinates):
-        """
-        Class to define a coordinate system.
-
-        Parameters
-        ----------
-        coordinates: list(~variable.Coordinate)
-            List of coordinates on which the basis is defined.
-        """
-
-        self.coordinates = coordinates
-
-    @property
-    def coordinates_symbol(self):
-        return [coo.symbol for coo in self.coordinates]
-
-    @property
-    def coordinates_name(self):
-        return [coo.name for coo in self.coordinates]
